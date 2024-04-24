@@ -33,8 +33,10 @@ class Utilisateur extends CI_Controller {
     {
         $email = $this->input->post('email');
         $mot_de_passe = $this->input->post('mot_de_passe');
-        if ($this->utilisateur_model->login($email, $mot_de_passe))
+        $utilisateur = $this->utilisateur_model->login($email, $mot_de_passe);
+        if ($utilisateur)
         {
+            $this->session->set_userdata('id_utilisateur', $utilisateur->id);
             redirect('pret');
         }
         else
@@ -54,7 +56,7 @@ class Utilisateur extends CI_Controller {
         $email = $this->input->post('email');
         $mot_de_passe = $this->input->post('mot_de_passe');
         $this->utilisateur_model->inscription($nom, $email, $mot_de_passe);
-        redirect('pret');
+        redirect('utilisateur');
     }
 
     public function liste()

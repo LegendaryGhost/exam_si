@@ -47,4 +47,20 @@ class Utilisateur extends CI_Controller {
     {
         $this->load->view('templates/inscription');
     }
+
+    public function traitement_inscription()
+    {
+        $nom = $this->input->post('nom');
+        $email = $this->input->post('email');
+        $mot_de_passe = $this->input->post('mot_de_passe');
+        if ($this->utilisateur_model->login($email, $mot_de_passe))
+        {
+            redirect('pret');
+        }
+        else
+        {
+            redirect('utilisateur');
+        }
+    }
+
 }

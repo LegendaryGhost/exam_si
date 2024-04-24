@@ -16,10 +16,10 @@
         <div class="container"><a class="navbar-brand logo" href="#"><span style="color: rgb(255, 128, 0);">WI</span><span style="color: rgb(0, 0, 0);">Y</span><span style="color: rgb(255, 128, 0);">ICREA</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ammortissement.html">Tableau d'ammortissement</a></li>
-                    <li class="nav-item"><a class="nav-link" href="analyse.html">Analyse</a></li>
-                    <li class="nav-item"><a class="nav-link" href="connexion.html">Deconnexion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>utilisateur/index">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>utilisateur/ammortissement">Tableau d'ammortissement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>utilisateur/analyse">Analyse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>utilisateur/connexion">Deconnexion</a></li>
                 </ul>
             </div>
         </div>

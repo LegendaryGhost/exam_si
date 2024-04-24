@@ -57,4 +57,27 @@ class Utilisateur extends CI_Controller {
         redirect('pret');
     }
 
+    public function liste()
+    {
+        $this->load->view('templates/liste');
+    }
+
+    public function accueil()
+    {
+        $this->load->view('templates/accueil');
+    }
+
+    public function ammortissement()
+    {
+        $this->load->view('templates/ammortissement');
+    }
+
+    public function analyse()
+    {
+        $this->load->view('templates/analyse');
+    }
+
+
+
+
 }

@@ -15,4 +15,16 @@ class Pret extends CI_Controller {
 	{
 		$this->load->view('templates/accueil');
 	}
+
+    public function traitement_inscription()
+    {
+        $montant = $this->input->post('montant');
+        $taux = $this->input->post('taux');
+        $duree = $this->input->post('duree');
+        $date_debut = $this->input->post('date_debut');
+        $this->utilisateur_model->inscription($montant, $taux, $duree, $date_debut);
+        redirect('utilisateur');
+    }
+
+
 }

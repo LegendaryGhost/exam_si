@@ -11,4 +11,5 @@ CREATE TABLE utilisateur (
 );
 
 INSERT INTO utilisateur(nom, email, mot_de_passe) VALUES
-    ('Tiarintsoa', 'tiarintsoa@gmail.com', 'tiarintsoa');
+    ('Tiarintsoa', 'tiarintsoa@gmail.com', 'tiarintsoa'),
+    ('Admin', 'admin@gmail.com', 'admin');

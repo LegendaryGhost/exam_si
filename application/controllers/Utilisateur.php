@@ -31,7 +31,16 @@ class Utilisateur extends CI_Controller {
 
     public function traitement_login()
     {
-        
+        $email = $this->input->post('email');
+        $mot_de_passe = $this->input->post('mot_de_passe');
+        if ($this->utilisateur_model->login($email, $mot_de_passe))
+        {
+            redirect('pret');
+        }
+        else
+        {
+            redirect('utilisateur');
+        }
     }
 
     public function inscription()

@@ -24,12 +24,12 @@
                         <h2>Insertion Pret</h2>
                     </div>
                     <form class="border rounded border-0 shadow-lg p-3 p-md-5" data-bs-theme="light">
-                        <div class="mb-3"><label class="form-label" for="email">Montant du pret</label><input class="form-control" type="email" id="email-3"></div>
-                        <div class="mb-3"><label class="form-label" for="email">Taux d'effectif global (TEG)</label><input class="form-control" type="email" id="email-2"></div>
-                        <div class="mb-3"><label class="form-label" for="email">Duree d'ammortissement du pret (en mois)</label><input class="form-control" type="email" id="email-1"></div>
+                        <div class="mb-3"><label class="form-label" for="email">Montant du pret</label><input class="form-control" type="number" id="email-3" name="montant"></div>
+                        <div class="mb-3"><label class="form-label" for="email">Taux d'effectif global (TEG)</label><input class="form-control" type="number" id="email-2" name="taux"></div>
+                        <div class="mb-3"><label class="form-label" for="email">Duree d'ammortissement du pret (en mois)</label><input class="form-control" type="number" id="email-1" name="duree"></div>
                         <div class="mb-3">
                             <div class="row">
-                                <div class="col-md-6"><label class="form-label" for="hire-date">Date de debut de l'emprunt</label><input class="form-control" id="hire-date" type="date"></div>
+                                <div class="col-md-6"><label class="form-label" for="hire-date">Date de debut de l'emprunt</label><input class="form-control" id="hire-date" type="date" name="date_debut"></div>
                                 <div class="col-md-6 button"><button class="btn btn-primary d-block w-100" type="submit">Inserer</button></div>
                             </div>
                         </div>

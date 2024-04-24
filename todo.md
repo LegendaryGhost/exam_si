@@ -1,21 +1,26 @@
 # Simulation de prêt
 
 - [x] Repo GitHub
-  - [x] Creation du repo (5min)
-  - [x] Invitation de l'equipe sur le repo (2min)
+  - [x] Creation du repo (5 min)
+  - [x] Invitation de l'equipe sur le repo (2 min)
 
 - [ ] Page de connexion
   - [ ] Affichage
     - [ ] Creation du template Codeigniter
     - [ ] Maquette de la page de connexion
     - [ ] Formulaire(email, mot_de_passe)
-  - [ ] Fonction (Modèle)
-    - [ ] UtilisateurModel
-      - [ ] login(email, mot_de_passe)
-  - [ ] Donnees (SQL)
-    - [ ] utilisateur(id, email, mot_de_passe)
+  - [x] Fonction (Modèle)
+    - [x] Configuration de la connexion à la base de données (3 min)
+    - [x] UtilisateurModel
+      - [x] login(email, mot_de_passe) (5 min)
+  - [x] Donnees (SQL)
+    - [x] Création de la base MySQL (1 min)
+    - [x] utilisateur(id, nom, email, mot_de_passe) (3 min)
   - [ ] Integration
-    - [ ] action du formulaire (traitement du login)
+    - [ ] Controlleur Utilisateur
+      - [x] index()
+      - [ ] traitement_login()
+    - [ ] Action du formulaire (traitement du login)
 
 - [ ] Page d'inscription
   - [ ] Affichage
@@ -35,6 +40,9 @@
     - [ ] PretModel
       - [ ] ajouter(montant, teg, duree_mois, date_debut)
   - [ ] Donnees (SQL)
+    - Arranger pour prendre en compte le decalage du 1er mois(
+        2 => pas de remboursement les 2 1ers mois mais il y a des interets
+    )
     - [ ] pret(id, id_utilisateur, nom, montant, teg, duree_mois, date_debut)
     - [ ] amortissement(
           id,

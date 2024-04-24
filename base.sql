@@ -25,3 +25,16 @@ CREATE TABLE pret (
     PRIMARY KEY (id),
     FOREIGN KEY (id_utilisateur) REFERENCES utilisateur(id)
 );
+
+CREATE TABLE amortissement (
+   id INT PRIMARY KEY,
+   id_pret INT,
+   numero_mensualite INT,
+   date_versement DATE,
+   solde_initial DECIMAL(10, 2),
+   mensualite DECIMAL(10, 2),
+   capital_rembourse DECIMAL(10, 2),
+   interet DECIMAL(10, 2),
+   capital_restant DECIMAL(10, 2),
+   FOREIGN KEY (id_pret) REFERENCES pret(id)
+);

@@ -19,7 +19,7 @@
 
   <body>
     <header>
-      <?php include 'footer.php' ?>
+      <?php include 'header.php' ?>
     </header>
     <main class="page projects-page">
       <section class="portfolio-block projects-cards">

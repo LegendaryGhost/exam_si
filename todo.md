@@ -19,17 +19,18 @@
     - [x] Controlleur Utilisateur
       - [x] index() (15 min)
       - [x] traitement_login() (5 min)
+      - [x] deconnexion() (10 min)
     - [x] Action du formulaire (traitement du login) (10 sec)
 
-- [ ] Page d'inscription
-  - [ ] Affichage
-  - [ ] Fonction (Modèle)
-    - [ ] UtilisateurModel
-      - [ ] inscription(email, mot_de_passe)
+- [x] Page d'inscription
+  - [x] Affichage
+  - [x] Fonction (Modèle)
+    - [x] UtilisateurModel
+      - [x] inscription(email, mot_de_passe)
   - [x] Donnees (SQL)
     - [x] utilisateur
-  - [ ] Integration
-    - [ ] action du formulaire (traitement de l'inscription)
+  - [x] Integration
+    - [x] action du formulaire (traitement de l'inscription)
 
 - [ ] Page de creation de simulation de prêt
   - [x] Affichage
@@ -42,7 +43,7 @@
         2 => pas de remboursement les 2 1ers mois mais il y a des interets
     )
     - [ ] pret(id, id_utilisateur, nom, montant, teg, duree_mois, date_debut)
-    - [ ] amortissement(
+    - [x] amortissement(
           id,
           id_pret,
           numero_mensualite,

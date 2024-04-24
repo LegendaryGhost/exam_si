@@ -25,7 +25,7 @@
                                             <h4 class="text-dark mb-4">Inscrivez-vous!</h4>
                                         </div>
                                         <form class="user" action="<?= base_url() ?>utilisateur/traitement_inscription" method="post">
-                                            <div class="mb-3"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Entree votre nom..." name="nom"></div>
+                                            <div class="mb-3"><input class="form-control form-control-user" type="text" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Entree votre nom..." name="nom"></div>
                                             <div class="mb-3"><input class="form-control form-control-user" type="email" id="exampleInputEmail-1" aria-describedby="emailHelp" placeholder="Entree Adresse Email ..." name="email"></div>
                                             <div class="mb-3"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Mot de passe" name="mot_de_passe"></div>
                                             <div class="mb-3">

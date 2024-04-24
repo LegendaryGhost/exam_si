@@ -12,7 +12,7 @@ class Utilisateur_model extends CI_Model {
     }
 
     public function inscription($nom, $email, $mot_de_passe) {
-        $query = "INSERT INTO utilisateur (nom, email, mot_de_passe) VALUES (%s,%s,%s);
+        $query = "INSERT INTO utilisateur (nom, email, mot_de_passe) VALUES (%s,%s,%s)";
         $query = sprintf($query, $this->db->escape($nom), $this->db->escape($email), $this->db->escape($mot_de_passe));
         $this->db->query($query);
     }

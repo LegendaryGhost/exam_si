@@ -6,7 +6,7 @@ class Pret extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->helper('auth');
-        if (!is_logged_in()) {
+        if (!est_connecte()) {
             redirect('utilisateur/login');
         }
     }

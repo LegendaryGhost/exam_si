@@ -79,7 +79,11 @@ class Utilisateur extends CI_Controller {
         $this->load->view('templates/analyse');
     }
 
-
+    public function deconnexion()
+    {
+        $this->session->unset_userdata('id_utilisateur');
+        redirect('utilisateur');
+    }
 
 
 }

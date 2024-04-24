@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Projet pret</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/Ludens-basic-login.css">
-    <link rel="stylesheet" href="assets/css/pikaday.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/Ludens-basic-login.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/pikaday.min.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                                         <div class="text-center">
                                             <h4 class="text-dark mb-4">Connectez-vous !</h4>
                                         </div>
-                                        <form class="user">
+                                        <form class="user" action="<?= base_url() ?>utilisateur/traitement_login" method="post">
                                             <div class="mb-3"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Entree Addresse Email  ..." name="email"></div>
                                             <div class="mb-3"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Mot de passe" name="password"></div>
                                             <div class="mb-3">
@@ -33,7 +33,7 @@
                                             <hr>
                                             <hr>
                                         </form>
-                                        <div class="text-center"><a class="small" href="inscription.html" style="color: #142fbb;">Pas encore de compte ?</a></div>
+                                        <div class="text-center"><a class="small" href="<?= base_url() ?>utilisateur/inscription" style="color: #142fbb;">Pas encore de compte ?</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -43,9 +43,9 @@
             </div>
         </div>
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/pikaday.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="<?= base_url() ?>assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= base_url() ?>assets/js/pikaday.min.js"></script>
+    <script src="<?= base_url() ?>assets/js/theme.js"></script>
 </body>
 
 </html>

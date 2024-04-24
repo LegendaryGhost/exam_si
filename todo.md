@@ -1,6 +1,8 @@
 # Simulation de prêt
 
-- [ ] Creation du repo github (5 min)
+- [x] Repo GitHub
+  - [x] Creation du repo (5min)
+  - [x] Invitation de l'equipe sur le repo (2min)
 
 - [ ] Page de connexion
   - [ ] Affichage

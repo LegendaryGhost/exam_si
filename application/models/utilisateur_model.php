@@ -8,7 +8,7 @@ class Utilisateur_model extends CI_Model {
         $query = "SELECT * FROM utilisateur WHERE email = %s AND mot_de_passe = %s";
         $query = sprintf($query, $this->db->escape($email), $this->db->escape($mot_de_passe));
         $result = $this->db->query($query);
-        return $result->num_rows() > 0;
+        return $result->row();
     }
 
     public function inscription($nom, $email, $mot_de_passe) {
